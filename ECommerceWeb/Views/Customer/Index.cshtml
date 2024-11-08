@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<main>
+    <ol>
+        @{
+            foreach (CRM.Customer c in @Model)
+            {
+                <li>
+                    <p>@c.FirstName   @c.LastName  @c.Email  @c.Contact</p>
+                </li>
+            }
+        }
+    </ol>
+</main>
+
